@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.airbnb.android:lottie
+    versions:
+    - 3.6.1
+  - dependency-name: androidx.lifecycle:lifecycle-viewmodel-ktx
+    versions:
+    - 2.3.0
+- package-ecosystem: gradle
+  directory: "/app"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.airbnb.android:lottie
+    versions:
+    - 3.6.1
